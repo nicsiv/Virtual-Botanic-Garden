@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#THESE ARE THE ROOM SEEDS 
+
+
+
+
+#THESE ARE THE PLANT SEEDS
+
+aloevera = Plant.create(room_id :cactus.id, )

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  room_id: 1
+  name: MyString
+  description: MyText
+  care_instructions: MyText
+  difficulty_level: MyString
+  light_level: MyString
+  color: false
+  size: MyString
+  image: 
+
+two:
+  room_id: 1
+  name: MyString
+  description: MyText
+  care_instructions: MyText
+  difficulty_level: MyString
+  light_level: MyString
+  color: false
+  size: MyString
+  image: 
