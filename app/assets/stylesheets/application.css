@@ -13,3 +13,197 @@
  *= require_tree .
  *= require_self
  */
+
+
+/* Default CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+  }
+
+  img {
+    max-width: 100%; /* this ensures images never break their container */
+    height: auto;
+  }
+
+  body {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: rgb(120,120,125);
+  }
+
+[class*=grid] {   margin: 0;  }
+[class*=col]  {   padding: 0; }
+
+  .left     {  text-align: left;     }
+  .right    {  text-align: right;    }
+  .centered {  text-align: center;   }
+
+  .padded   {  padding: 5%;    }
+  .padded-1 {  padding: 1rem;  }
+  .padded-2 {  padding: 2rem;  }
+
+
+  /* General Typography */
+
+h2, h3, h4, h5, h6 {
+    line-height: 1;
+    margin-bottom: 0.8rem;
+    font-family: 'Playfair Display', serif;
+  }
+
+  h2  { font-size: 2.2rem;  }
+  h3  { font-size: 1.8rem;  }
+  h4  { font-size: 1.4rem;  }
+  p   { font-size: 1rem;  }
+
+  p, ul {
+     margin-bottom: 0.8rem;
+  }
+  p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
+    font-size: 1.2rem;
+  }
+  .big-bold {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .light-bg     {  background-color: #fff4ea;  }
+  .light-text   { color: white; }
+
+
+/* Butttons */
+.button,
+.button-solid,
+.button-inverted {
+  text-decoration: none;
+  color: #e67e22;
+  border: 2px solid;
+  padding: 0.6rem 2rem;
+  margin-top: 1rem;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.button.inverted {   /* this is for a button on a dark background */
+    border: 2px solid white;
+    color: white;
+  }
+
+/* Header */
+header {
+    padding: 2% 5%;
+  }
+
+  header a,
+  footer a,
+  nav a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  header nav a,
+  .inline a {
+    display: inline-block;
+    padding: 0.5rem;
+  }
+  nav a:hover {
+    color: #e67e22;
+  }
+
+  header nav a.emphasis {
+    /* padding: 0.5rem 2rem; */
+    margin: 0 0.5rem;
+    border: 1px solid #e67e22;
+    border-radius: 2px;
+    color: #e67e22;
+  }
+
+  header nav a.emphasis:hover {
+    background-color: #e67e22;
+    color: white;
+  }
+
+  
+  /* Banner */
+.highlight { /* this is applied to spans for out highlighted text. */
+    background-color: rgb(240, 240, 245);
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 2px;
+  }
+  .banner,
+  .banner-with-header {
+    background-image: url(plants2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+  }
+  .button.inverted {   /* this is for a button on a dark background */
+    border: 2px solid white;
+    color: white;
+  }
+
+ /* About Section */
+ .banner1 {
+   background-image: url(plants4.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   min-height: 80vh;
+ }
+
+/* Clickable Plant Room Boxes */
+.clickable-box {
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+    transition: 0.2s all;
+    display: block;
+  }
+
+  .clickable-box .overlay {
+    min-height:10rem;
+    padding: 5rem 2rem;
+    color: white;
+  }
+
+  .clickable-box p {
+    margin-bottom: 0;
+  }
+
+  .clickable-box:hover {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    margin-top:-2px;
+  }
+
+  .cactus-box {
+    background-image: url(plants4.jpg);
+    background-size: cover;
+  }
+  .flower-box {
+    background-image: url(plants4.jpg);
+    background-size: cover;
+  }
+  .foliage-box {
+    background-image: url(plants4.jpg);
+    background-size: cover;
+  }
+  .herb-box {
+    background-image: url(plants4.jpg);
+    background-size: cover;
+  }
+
+
+
+
+  /* Create Garden Section */
+  .create {
+    background-image: url(plants2.jpg);
+    background-size: cover;
+  }
