@@ -7,15 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 #THESE ARE THE ROOM SEEDS 
-cactus_room
-flower_room
-palm_room
-herb_room
+cactus_room = Room.create(room_name: "Cactus & Succulent Room")
+# flower_room
+# palm_room
+# herb_room
 
 #THESE ARE THE PLANT SEEDS
 
 # Cactus Room
-aloe_vera = Plant.create(room_id: cactus_room.id, name: "Aloe Vera", description: "Aloe vera is a stemless or very short-stemmed plant growing to 60–100 cm (24–39 in) tall, spreading by offsets. The leaves are thick and fleshy, green to grey-green, with some varieties showing white flecks on their upper and lower stem surfaces.", care_instructions: "Water every month. Let soil dry up. Fertilize every second month. No cleaning needed.", difficulty_level: "Easy", light: "Medium", color: false, size: "medium", image: app/assets/images/aloevera.jpg)
+aloe_vera = Plant.create(room_id: cactus_room.id, name: "Aloe Vera", description: "Aloe vera is a stemless or very short-stemmed plant growing to 60–100 cm (24–39 in) tall, spreading by offsets. The leaves are thick and fleshy, green to grey-green, with some varieties showing white flecks on their upper and lower stem surfaces.", care_instructions: "Water every month. Let soil dry up. Fertilize every second month. No cleaning needed.", difficulty_level: "Easy", light_level: "Medium", color: false, size: "Medium", image: "aloevera.jpg")
 
 # Flower Room
 

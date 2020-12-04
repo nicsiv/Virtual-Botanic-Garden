@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_03_175318) do
+ActiveRecord::Schema.define(version: 2020_12_04_154047) do
 
   create_table "garden_plants", force: :cascade do |t|
     t.integer "plant_id"
@@ -34,14 +34,13 @@ ActiveRecord::Schema.define(version: 2020_12_03_175318) do
     t.string "light_level"
     t.boolean "color"
     t.string "size"
-    t.binary "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "image"
   end
 
   create_table "rooms", force: :cascade do |t|
     t.string "room_name"
-    t.integer "plant_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
