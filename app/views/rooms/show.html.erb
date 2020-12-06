@@ -1,1 +1,32 @@
-<h1>WELCOME TO THE CACTUS & SUCCULENT ROOM</h1>
+<h1 class="centered">Welcome To The <%=@room.room_name%></h1>
+
+<section class="centered">
+<ul>
+    <% @room.plants.each do |plant| %>
+    <li> 
+    <%= image_tag plant.image %>
+    </li>
+    <li>
+    <%= plant.name %>
+    </li>
+    <li>
+    Description:<%= plant.description %>
+    </li>
+    <li>
+    Care Instructions:<%= plant.care_instructions %>
+    </li>
+    <li>
+    Difficulty Level:<%= plant.difficulty_level %>
+    </li>
+    <li>
+    Light Level:<%= plant.light_level %>
+    </li>
+    <li>
+    Color:<%= plant.color %>
+    </li>
+    <li>
+    Size:<%= plant.size %>
+    </li>
+    <% end %>
+</ul>
+</section>

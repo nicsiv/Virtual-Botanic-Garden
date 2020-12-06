@@ -1,0 +1,10 @@
+<h1> Welcome To Your Garden </h1>
+
+<ul>
+    <% @garden.plants.each do |plant| %>
+    <li> 
+        <%= plant.name %>
+    </li>
+    <% end %>
+</ul>
+

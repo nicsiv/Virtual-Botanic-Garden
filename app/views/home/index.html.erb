@@ -1,30 +1,35 @@
-<section class="banner grid-right padded">
+<section index="home" class="banner grid-right padded">
   <div class="col-6_sm-12-middle">
-    <h3 class="big-bold">
-          <span class="highlight"> Our green </span> <br>
-          <span class="highlight"> thumb. </span> <br>
-          <span class="highlight"> Your space. </span>
-        </h3>
-    <a href="#" class="button inverted"> Take the quiz!</a>
+    <h1 class="big-bold banner-text">
+          <span> Our green </span> <br>
+          <span> thumb. </span> <br>
+          <span> Your space. </span>
+        </h1>
+    <a href="#" class="button inverted banner-button"> Take the quiz!</a>
   </div>
 </section>
 
+<br>
 
-
-<section class="grid light-bg">
+<section class="grid">
   <div class="col-6_sm-12 banner1">
   </div>
   <div class="col-6_sm-12-middle padded">
-    <h2 class="big-bold"> This this the about section </h2>
-    <p class="emphasis"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <h2 class="big-bold centered about-span"> 
+      <span> What is the </span> <br>
+      <span> Virtual Botanic Garden? </span>
+    </h2>
+    <br>
+    <p class="emphasis about"> Welcome to The Virtual Botanic Garden. <br>
+    The Virtual Botanic Garden offers a virtual gardening experience. Visit different plant rooms to browse and learn about some of the most beautiful plants. Find the perfect plants for you based on your preferences and gardening level. Cacti, flowers, palms, herbs, and more are available for collection with just a few clicks. Once you have chosen which plants you would like in your garden, quickly fill  out our form to create your garden. Vistit this garden at any time or pick up your selections from a local florist to bring home. </p>
   </div>
 </section>
 
 
 
 <section class="padded centered">
-  <h2> Visit A Plant Garden</h2>
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  <h2 class="plant-rooms"> Visit A Plant Room</h2>
+  <p class= "emphasis"> Browse & learn about plants in these different categories. </p>
   <div class="grid padded-1">
     <div class="col-3 padded-1">
       <a href="#" class="clickable-box bg-image cactus-box">
@@ -42,7 +47,7 @@
       </a>
     </div>
 
-    <div class="col-3 padded-1">
+    <div index="create" class="col-3 padded-1">
       <a href="#" class="clickable-box bg-image foliage-box">
         <div class="overlay padded light-text">
           <h3> Foliage & Palms </h3>
@@ -61,10 +66,11 @@
 
 
 
-<section class="centered create">
-    <div class="padded">
-    <h1 class="big-bold"> Create Your Garden </h1>
-    <a href="#" class="button inverted"> Create My Garden</a>
+<section class="create centered">
+    <div class="padded2">
+    <h1 class="create-text"> Create Your Garden </h1>
+    <%=link_to "Create My Garden", new_garden_path(@garden), class: "button inverted"%>
     <a href="#" class="button inverted"> See My Garden </a>
     </div>
 </section>
+<br>

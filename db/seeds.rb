@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+Room.destroy_all 
+Plant.destroy_all 
+
+
 #THESE ARE THE ROOM SEEDS 
 cacti_room = Room.create(room_name: "Cacti & Succulent Room")
 # flower_room
@@ -14,6 +19,7 @@ flower_room = Room.create(room_name: "Flower & Orchid Room")
 palm_room = Room.create(room_name: "Palm & Foliage Room")
 # herb_room
 herb = Room.create(room_name: "Vegetable & Herb Room")
+
 #THESE ARE THE PLANT SEEDS
 
 # Cactus Room
@@ -39,15 +45,16 @@ golden_barrel_cactus = Plant.create(room_id: cacti_room.id, name: "Golden Barrel
 
 # Flower Room
 
-peace_lily = Plant.create(room_id: cacti_room.id, name: "Peace Lily", description: "Peace lilies are sturdy plants with glossy, dark green oval leaves that narrow to a point. The leaves rise directly from the soil. These plants also periodically produce lightly fragrant white flowers that resemble calla lilies. The long-lasting flowers start out pale green and slowly turn creamy white as they open.", care_instructions: "Water every 5th day. Keep soil moist. Fertalize every three weeks.", difficulty_level: "Medium", light_level: "low", color: true, size: "Medium", image: "app/assets/images/peace_lily.jpeg")
+peace_lily = Plant.create(room_id: flower_room.id, name: "Peace Lily", description: "Peace lilies are sturdy plants with glossy, dark green oval leaves that narrow to a point. The leaves rise directly from the soil. These plants also periodically produce lightly fragrant white flowers that resemble calla lilies. The long-lasting flowers start out pale green and slowly turn creamy white as they open.", care_instructions: "Water every 5th day. Keep soil moist. Fertalize every three weeks.", difficulty_level: "Medium", light_level: "low", color: true, size: "Medium", image: "app/assets/images/peace_lily.jpeg")
 
-bird_of_paradise = Plant.create(room_id: cacti_room.id, name: "Bird of Paradise", description: "Strelitzia reginae is a species of evergreen tropical herbaceous plant, native to South Africa. Given its own family Strelitziaceae by taxonomists, it is still closely related to bananas (Musaceae). Many often mistakenly call this plant the “banana tree” because it looks like banana plants. These regal plants (for which they are named, reginae) are named for the beautiful, orange crane-like flowers that they produce, like birds of paradise. Under the right conditions, including full, southern light exposure, proper humidity and temperature, Bird of Paradise may flower indoors, although this is rare.", care_instructions: "Water every 5th day. Keep soil moist. Fertalize every three weeks.", difficulty_level: "Hard", light_level: "High", color: true, size: "Medium", image: "app/assets/images/bird_of_paradise.jpeg")
+bird_of_paradise = Plant.create(room_id: flower_room.id, name: "Bird of Paradise", description: "Strelitzia reginae is a species of evergreen tropical herbaceous plant, native to South Africa. Given its own family Strelitziaceae by taxonomists, it is still closely related to bananas (Musaceae). Many often mistakenly call this plant the “banana tree” because it looks like banana plants. These regal plants (for which they are named, reginae) are named for the beautiful, orange crane-like flowers that they produce, like birds of paradise. Under the right conditions, including full, southern light exposure, proper humidity and temperature, Bird of Paradise may flower indoors, although this is rare.", care_instructions: "Water every 5th day. Keep soil moist. Fertalize every three weeks.", difficulty_level: "Hard", light_level: "High", color: true, size: "Medium", image: "app/assets/images/bird_of_paradise.jpeg")
 
-sunflower = Plant.create(room_id: cacti_room.id, name: "Sunflower", description: "The sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum). The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide.", care_instructions: "Water every 5th day. Keep soil moist. Mist twice per week.", difficulty_level: "Medium", light_level: "High", color: true, size: "Large", image: "app/assets/images/sunflower.jpeg")
+sunflower = Plant.create(room_id: flower_room.id, name: "Sunflower", description: "The sunflower (Helianthus annuus) is a living annual plant in the family Asteraceae, with a large flower head (capitulum). The stem of the flower can grow up to 3 metres tall, with a flower head that can be 30 cm wide.", care_instructions: "Water every 5th day. Keep soil moist. Mist twice per week.", difficulty_level: "Medium", light_level: "High", color: true, size: "Large", image: "app/assets/images/sunflower.jpeg")
 
-frangipani = Plant.create(room_id: cacti_room.id, name: "Frangipani", description: "Frangipanis are flowering plants from the family Apocynaceae, which is the family of dogbane, and their official name is Plumeria, which they are often called. Frangipanis are shrubs and small trees that are mostly deciduous. Sphinx moths pollinate frangipanis at night, when the scent of the flower is the strongest.", care_instructions: "Water every month. Let soil dry up. This plant can handle dry humidity.", difficulty_level: "Medium", light_level: "High", color: true, size: "Small", image: "app/assets/images/frangipani.jpeg")
+frangipani = Plant.create(room_id: flower_room.id, name: "Frangipani", description: "Frangipanis are flowering plants from the family Apocynaceae, which is the family of dogbane, and their official name is Plumeria, which they are often called. Frangipanis are shrubs and small trees that are mostly deciduous. Sphinx moths pollinate frangipanis at night, when the scent of the flower is the strongest.", care_instructions: "Water every month. Let soil dry up. This plant can handle dry humidity.", difficulty_level: "Medium", light_level: "High", color: true, size: "Small", image: "app/assets/images/frangipani.jpeg")
 
-variegated_pineapple = Plant.create(room_id: cacti_room.id, name: "Variegated Pineapple", description: "The variegated pineapple plant is grown for its foliage, not for its fruit. The gorgeous bright red, green and cream striped leaves are held rigidly off a low stem. Their bright fruit is attractive but rather bitter. The plants make lovely and interesting houseplants, or warm season potted outdoor plants.", care_instructions: "Water every 5th day. Keep soil moist. Mist twice per week.", difficulty_level: "Medium", light_level: "High", color: true, size: "Large", image: "app/assets/images/variegated _pineapple.jpg")
+variegated_pineapple = Plant.create(room_id: flower_room.id, name: "Variegated Pineapple", description: "The variegated pineapple plant is grown for its foliage, not for its fruit. The gorgeous bright red, green and cream striped leaves are held rigidly off a low stem. Their bright fruit is attractive but rather bitter. The plants make lovely and interesting houseplants, or warm season potted outdoor plants.", care_instructions: "Water every 5th day. Keep soil moist. Mist twice per week.", difficulty_level: "Medium", light_level: "High", color: true, size: "Large", image: "app/assets/images/variegated _pineapple.jpg")
+
 # Palm Room
 
 monstera = Plant.create(room_id: palm_room.id, name: "Monstera Deliciosa", description: "The monstera deliciosa is also known as the Swiss cheese plant, split leaf philodendron and Mexican breadfruit, among many other names. It is a huge floor plant with one of the most recognizable leaves in the design world.", care_instructions: "Water every 11th day. Top layer should be dry. Fertalize every three weeks.", difficulty_level: "Medium", light_level: "Medium", color: true, size: "Medium", image: "app/assets/images/monstera.jpg")
