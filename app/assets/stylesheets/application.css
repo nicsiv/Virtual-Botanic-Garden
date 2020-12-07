@@ -32,8 +32,9 @@
   }
 
   body {
-    font-family: 'Noto Sans HK', sans-serif;
-    color: rgb(120,120,125);
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    color: black;
   }
 
 [class*=grid] {   margin: 0;  }
@@ -50,26 +51,44 @@
 
   /* General Typography */
 
-h2, h3, h4, h5, h6 {
+ h2, h4, h5, h6 {
     line-height: 1;
     margin-bottom: 0.8rem;
-    font-family: 'Playfair Display', serif;
+    color: #404740;
+    font-family: 'Abril Fatface', cursive;
+  }
+  h3 {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .names {
+    color: #404740;
   }
 
-  h2  { font-size: 2.2rem;  }
+  .logo {
+    font-family: 'Lato', sans-serif;
+    font-size: 23px;
+    color: #404740;
+    display: inline;
+    font-weight: 400;
+  }
+
+  h2  { font-size: 3.2rem;  }
   h3  { font-size: 1.8rem;  }
-  h4  { font-size: 1.4rem;  }
-  p   { font-size: 1rem;  }
+  h4  { font-size: 16px;  }
+  p   { font-size: 1.2rem; }
 
   p, ul {
      margin-bottom: 0.8rem;
   }
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
-    font-size: 1.2rem;
+    font-size: 22px;
   }
+
   .big-bold {
     font-size: 3rem;
     font-weight: 700;
+    text-align: left;
   }
   .light-bg     {  background-color: #fff4ea;  }
   .light-text   { color: white; }
@@ -80,7 +99,7 @@ h2, h3, h4, h5, h6 {
 .button-solid,
 .button-inverted {
   text-decoration: none;
-  color: #e67e22;
+  color: #799979;
   border: 2px solid;
   padding: 0.6rem 2rem;
   margin-top: 1rem;
@@ -88,6 +107,10 @@ h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
+  background-color: white;
+}
+.button.inverted:hover {
+  color: #799979;
 }
 
 .button.inverted {   /* this is for a button on a dark background */
@@ -105,6 +128,7 @@ header {
   nav a {
     text-decoration: none;
     color: inherit;
+    font-weight: 400;
   }
 
   header nav a,
@@ -113,20 +137,31 @@ header {
     padding: 0.5rem;
   }
   nav a:hover {
-    color: #e67e22;
+    color: #799979;
   }
 
   header nav a.emphasis {
     /* padding: 0.5rem 2rem; */
     margin: 0 0.5rem;
-    border: 1px solid #e67e22;
+    border: 1px solid #799979;
     border-radius: 2px;
-    color: #e67e22;
+    color: #799979;
   }
 
   header nav a.emphasis:hover {
-    background-color: #e67e22;
+    background-color: #799979;
     color: white;
+  }
+
+  .banner-text {
+    color: white;
+    font-size: 80px;
+    padding-left: 3rem;
+    font-family: 'Abril Fatface', cursive;
+  }
+
+  .banner-button {
+    margin-left: 17rem;
   }
 
   
@@ -139,26 +174,33 @@ header {
   }
   .banner,
   .banner-with-header {
-    background-image: url(plants2.jpg);
+    background-image: url(plants7.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 80vh;
+    min-height: 100vh;
   }
   .button.inverted {   /* this is for a button on a dark background */
     border: 2px solid white;
-    color: white;
+    color: black;
   }
 
  /* About Section */
  .banner1 {
-   background-image: url(plants4.jpg);
+   background-image: url(stairs.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
    min-height: 80vh;
  }
+ .about-span {
+   padding-left: 5rem;
+ }
+ .about {
+   padding: 0 5rem 5rem 5rem;
+ }
 
 /* Clickable Plant Room Boxes */
+
 .clickable-box {
     color: inherit;
     text-decoration: none;
@@ -183,19 +225,19 @@ header {
   }
 
   .cactus-box {
-    background-image: url(plants4.jpg);
+    background-image: url(bunny_ears_cactus.jpeg);
     background-size: cover;
   }
   .flower-box {
-    background-image: url(plants4.jpg);
+    background-image: url(plants5.jpg);
     background-size: cover;
   }
   .foliage-box {
-    background-image: url(plants4.jpg);
+    background-image: url(majesty_palm.jpg);
     background-size: cover;
   }
   .herb-box {
-    background-image: url(plants4.jpg);
+    background-image: url(herbs2.jpg);
     background-size: cover;
   }
 
@@ -204,6 +246,24 @@ header {
 
   /* Create Garden Section */
   .create {
-    background-image: url(plants2.jpg);
+    background-image: url(greenhouse.jpg);
     background-size: cover;
+    background-position: center;
+    min-height: 50vh;
   }
+  .create-text {
+    color: white;
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .padded2 {
+    padding-top: 9rem;
+  }
+
+  /* Show Images */
+
+  .show-image {
+    max-width: 20rem;
+    display: inline-block;
+  } 
+  /* Read More Feature */
