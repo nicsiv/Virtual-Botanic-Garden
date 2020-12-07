@@ -1,25 +1,29 @@
-# <h1> Create Your Garden </h1>
+<h2 class="centered"> Create Your Garden </h2>
 
-# <%= form_for @garden do |f| %>
+<br>
+<div class="centered">
+<%= form_for @garden do |f| %>
   
-#     <%= f.label "Cacti" %>
-#     <%= f.collection_select :plant_ids, Plant.all, :id, :name, :multiple => true %>
+    <%= f.label "Cacti" %>
+    <%= f.collection_select :plant_ids, Room.find_by(:room_name => "Cacti & Succulent Room").plants, :id, :name, :multiple => true %>
 
-#     <%= f.label "Flowers" %>
-#     <%= f.collection_select :plant_ids, Plant.all, :id, :name, :multiple => true %>
+    <%= f.label "Flowers" %>
+    <%= f.collection_select :plant_ids, Room.find_by(:room_name => "Flower & Orchid Room").plants, :id, :name, :multiple => true %>
 
-#     <%= f.label "Foliage" %>
-#     <%= f.collection_select :plant_ids, Plant.all, :id, :name, :multiple => true %>
+    <%= f.label "Foliage" %>
+    <%= f.collection_select :plant_ids, Room.find_by(:room_name => "Palm & Foliage Room").plants, :id, :name, :multiple => true %>
 
-#     <%= f.label "Herbs" %>
-#     <%= f.collection_select :plant_ids, Plant.all, :id, :name, :multiple => true %>
+    <%= f.label "Herbs" %>
+    <%= f.collection_select :plant_ids, Room.find_by(:room_name => "Vegetable & Herb Room").plants, :id, :name, :multiple => true %>
   
-# <%= f.submit %>
-# <% end %>
+<%= f.submit %>
+<% end %>
+</div>
 
-# <% if @garden.errors.any? %>
-#   <h4>Errors</h4>
-#   <% @garden.errors.full_messages.each do |message| %>
-#     <li><%= message %></li>
-#   <% end %>
-# <% end %>
+<% if @garden.errors.any? %>
+  <h4>Errors</h4>
+  <% @garden.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+<% end %>
+<br>

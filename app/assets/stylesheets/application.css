@@ -163,10 +163,22 @@ header {
   .banner-button {
     margin-left: 17rem;
   }
+  /* Login Page */
 
+  .login-banner {
+    background-image: url(majesty_palm.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+    
+  }
+  .login-text {
+    color:white;
+    padding-top: 16rem;
+  }
   
   /* Banner */
-.highlight { /* this is applied to spans for out highlighted text. */
+  .highlight { /* this is applied to spans for out highlighted text. */
     background-color: rgb(240, 240, 245);
     display: inline-block;
     padding: 0.5rem;
@@ -266,4 +278,10 @@ header {
     max-width: 20rem;
     display: inline-block;
   } 
+
+  /* Form */
+  .form {
+  }
+
+
   /* Read More Feature */

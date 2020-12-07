@@ -1,10 +1,12 @@
-<h1> Welcome To Your Garden </h1>
+<h2 class="centered"> Welcome To Your Garden </h2>
 
 <ul>
     <% @garden.plants.each do |plant| %>
-    <li> 
-        <%= plant.name %>
+    <li class="show-image">
+    <%= image_tag plant.image %></div>
+    </li>
+    <h3 class="names"><%= plant.name %></h3>
     </li>
     <% end %>
 </ul>
-
+<br>
