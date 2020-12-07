@@ -33,6 +33,7 @@
 
   body {
     font-family: 'Lato', sans-serif;
+    font-weight: 100;
     color: black;
   }
 
@@ -60,18 +61,22 @@
     color: white;
     font-family: 'Abril Fatface', cursive;
   }
+  .names {
+    color: #404740;
+  }
 
   .logo {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     color: #404740;
     display: inline;
+    font-weight: 400;
   }
 
   h2  { font-size: 3.2rem;  }
   h3  { font-size: 1.8rem;  }
-  h4  { font-size: 1.4rem;  }
-  p   { font-size: 1rem; }
+  h4  { font-size: 16px;  }
+  p   { font-size: 1.2rem; }
 
   p, ul {
      margin-bottom: 0.8rem;
@@ -79,6 +84,7 @@
   p.emphasis {   /* typically added to paragraphs to make them a little bigger, could be a different font or color also */
     font-size: 22px;
   }
+
   .big-bold {
     font-size: 3rem;
     font-weight: 700;
@@ -101,6 +107,10 @@
   text-transform: uppercase;
   font-size: 0.9rem;
   font-weight: 500;
+  background-color: white;
+}
+.button.inverted:hover {
+  color: #799979;
 }
 
 .button.inverted {   /* this is for a button on a dark background */
@@ -118,6 +128,7 @@ header {
   nav a {
     text-decoration: none;
     color: inherit;
+    font-weight: 400;
   }
 
   header nav a,
@@ -170,7 +181,7 @@ header {
   }
   .button.inverted {   /* this is for a button on a dark background */
     border: 2px solid white;
-    color: white;
+    color: black;
   }
 
  /* About Section */
@@ -249,4 +260,10 @@ header {
     padding-top: 9rem;
   }
 
+  /* Show Images */
+
+  .show-image {
+    max-width: 20rem;
+    display: inline-block;
+  } 
   /* Read More Feature */

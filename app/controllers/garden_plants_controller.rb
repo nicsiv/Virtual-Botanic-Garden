@@ -10,7 +10,7 @@ class GardenPlantsController < ApplicationController
     def create
         @garden_plant = GardenPlant.new(garden_plant_params)
         if @garden_plant.save
-          redirect_to garden_path(@garden_plant.garden_id)
+          redirect_to garden_path(@garden_plant.garden)
         else 
           render :new
         end 

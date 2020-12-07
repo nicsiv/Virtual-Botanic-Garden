@@ -1,31 +1,31 @@
-<h1 class="centered">Welcome To The <%=@room.room_name%></h1>
-
-<section class="centered">
-<ul>
+<h2 class="centered">Welcome To The <%=@room.room_name%></h2>
+<br>
+<section>
+<ul class="centered special_ul">
     <% @room.plants.each do |plant| %>
-    <li> 
-    <%= image_tag plant.image %>
+    <li class="show-image">
+    <%= image_tag plant.image %></div>
     </li>
     <li>
-    <%= plant.name %>
+    <h3 class="names"><%= plant.name %></h3>
     </li>
     <li>
-    Description:<%= plant.description %>
+    <h4>Description:</h4><p><%= plant.description %></p>
     </li>
     <li>
-    Care Instructions:<%= plant.care_instructions %>
+    <h4>Care Instructions:</h4><p><%= plant.care_instructions %></p>
     </li>
     <li>
-    Difficulty Level:<%= plant.difficulty_level %>
+    <h4>Difficulty Level:</h4><p><%= plant.difficulty_level %></p>
     </li>
     <li>
-    Light Level:<%= plant.light_level %>
+    <h4>Light Level:</h4><p><%= plant.light_level %></p>
     </li>
     <li>
-    Color:<%= plant.color %>
+    <h4>Color:</h4><p><%= plant.color %></p>
     </li>
     <li>
-    Size:<%= plant.size %>
+    <h4>Size:</h4><p><%= plant.size %></p>
     </li>
     <% end %>
 </ul>
