@@ -102,3 +102,5 @@ jalapeno = Plant.create(room_id: herb_room.id, name: "Jalapeno", description: "T
 
 carrot = Plant.create(room_id: herb_room.id, name: "Carrot", description: "The carrot is a root vegetable, usually orange in color, though purple, black, red, white, and yellow cultivars exist. They are a domesticated form of the wild carrot, Daucus carota, native to Europe and Southwestern Asia. The plant probably originated in Persia and was originally cultivated for its leaves and seeds.", care_instructions: "Water every 5th day. Keep soil moist.", difficulty_level: "Easy", light_level: "High", color: true, size: "Medium", image: "carrot.jpeg")
 
+beet = Plant.create(room_id: herb_room.id, name: "Beet", description: "The beetroot is the taproot portion of a beet plant, usually known in Canada and the USA as beets while the vegetable is referred to as beetroot in British English, and also known as the table beet, garden beet, red beet, dinner beet or golden beet.", care_instructions: "Water every 11th day. Top layer should be dry. Fertalize every three weeks.", difficulty_level: "Medium", light_level: "High", color: true, size: "Small", image: "beet.jpeg")
+
