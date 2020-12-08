@@ -1,4 +1,4 @@
-<h2 class="centered"> Welcome To Your Garden </h2>
+<h2 class="centered"> Welcome To <%= @garden.garden_name %></h2>
 
 <ul>
     <% @garden.plants.each do |plant| %>
@@ -9,4 +9,10 @@
     </li>
     <% end %>
 </ul>
+
+<button><%= link_to "Edit Garden", edit_garden_path(@garden)%></button>
 <br>
+<button><%= link_to "Delete Garden", garden_path(@garden), method: :delete %></button>
+<br>
+
+
