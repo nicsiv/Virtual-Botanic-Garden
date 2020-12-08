@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Virtual Botanic Garden 
+- The Virtual Botanic Garden offers a virtual botanical garden tour. Visit different plant rooms to browse and learn about some of the most beautiful plants. Find the perfect plants for you based on your preferences and gardening level. Cacti, flowers, palms, herbs, and more are available for collection with just a few clicks. Once you have chosen which plants you would like in your garden, quickly fill out our form to create your garden. Visit this garden at any time.
 
-Things you may want to cover:
+## Application Features
+- User can log in with a username and password
+- User can navigate to garden rooms and click through each room 
+- New user can create a garden 
+- User can view, edit, and delete their garden
+- *Future update* User can take a quiz to determine which plants are best for their lifestyle 
 
-* Ruby version
+## Built With
+- Ruby
+- Rails framework with MVC architecture
+- SQLite3 as the database for Active Record
+- CSS for styling
 
-* System dependencies
+## Install Instructions
+- Run bundle install
+- Run rails s
 
-* Configuration
+## Contributing
+- CONTRIBUTING.md
 
-* Database creation
+## Authors
+- Nicole Uyigue-Sivek
+- Alexa Botello
 
-* Database initialization
+## License
+- LICENSE.md
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Acknowledgments
+- Thanks so much to Max Oppenheimer, Derick Castillo, and Lindsay Mecher for your help! 

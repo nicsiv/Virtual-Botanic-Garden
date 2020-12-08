@@ -110,3 +110,5 @@ beet = Plant.create(room_id: herb_room.id, name: "Beet", description: "The beetr
 
 # User Seeds
 admin  = User.create(username: "admin", password: "password", password_confirmation: "password")
+nicole = User.create(username: "nsivek", password: "password", password_confirmation: "password")
+alexa = User.create(username: "abotello", password: "password", password_confirmation: "password")
