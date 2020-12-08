@@ -1,15 +1,14 @@
-<h2 class="centered"> Edit Your Garden </h2>
-
-<br>
+<section class="centered edit-garden"> 
+<h2 class="login-text"> Edit Your Garden </h2>
 <div class="centered">
 <%= form_for @garden do |f| %>
   
-    <%= f.label "Rename Your Garden" %>
+    <h5><%= f.label "Rename Your Garden" %>
     <%= f.text_field :garden_name %>
     
     <%= f.label "Plant" %>
-    <%= f.collection_select :plant_ids, Plant.all, :id, :name %>
-  
+    <%= f.collection_select :plant_ids, Plant.all, :id, :name %></h5>
+  <br>
 <%= f.submit %>
 <% end %>
 </div>
@@ -22,7 +21,9 @@
 <% end %>
 <br>
 
-<button> Add Plant</button>
-<br>
-<button> Delete Plant </button>
+<div>
+<button class="crud-button">Add Plant</button>
+<button class="crud-button"> Delete Plant </button>
+</div>
+</section>
 <br>

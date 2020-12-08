@@ -1,5 +1,6 @@
 <h2 class="centered"> Welcome To <%= @garden.garden_name %></h2>
-
+<br>
+<section class="centered show-garden">
 <ul>
     <% @garden.plants.each do |plant| %>
     <li class="show-image">
@@ -10,9 +11,11 @@
     <% end %>
 </ul>
 
-<button><%= link_to "Edit Garden", edit_garden_path(@garden)%></button>
+<div>
+<button class="crud-button"><%= link_to "Edit Garden", edit_garden_path(@garden)%></button>
+<button class="crud-button"><%= link_to "Delete Garden", garden_path(@garden), method: :delete %></button>
+</div>
 <br>
-<button><%= link_to "Delete Garden", garden_path(@garden), method: :delete %></button>
-<br>
+</section>
 
 

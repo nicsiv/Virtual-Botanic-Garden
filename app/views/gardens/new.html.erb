@@ -1,15 +1,16 @@
-<h2 class="centered"> Start Your Garden </h2>
-
+<section class= "centered new-garden-banner">
+  <h2 class="login-text"> Start Your Garden </h2>
 <br>
-<div class="centered">
+
+<div>
 <%= form_for @garden do |f| %>
   
-    <%= f.label "Name Your Garden" %>
+    <h5><%= f.label "Name Your Garden" %>
     <%= f.text_field :garden_name %>
     
     <%= f.label "Plant" %>
-    <%= f.collection_select :plant_ids, Plant.all, :id, :name %>
-  
+    <%= f.collection_select :plant_ids, Plant.all, :id, :name %></h5>
+  <br>
 <%= f.submit %>
 <% end %>
 </div>
@@ -20,4 +21,5 @@
     <li><%= message %></li>
   <% end %>
 <% end %>
+</section>
 <br>

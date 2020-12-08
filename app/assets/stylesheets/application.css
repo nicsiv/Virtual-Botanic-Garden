@@ -37,6 +37,11 @@
     color: black;
   }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
 [class*=grid] {   margin: 0;  }
 [class*=col]  {   padding: 0; }
 
@@ -51,7 +56,7 @@
 
   /* General Typography */
 
- h2, h4, h5, h6 {
+ h2, h4, h6 {
     line-height: 1;
     margin-bottom: 0.8rem;
     color: #404740;
@@ -61,6 +66,7 @@
     color: white;
     font-family: 'Abril Fatface', cursive;
   }
+  
   .names {
     color: #404740;
   }
@@ -76,6 +82,7 @@
   h2  { font-size: 3.2rem;  }
   h3  { font-size: 1.8rem;  }
   h4  { font-size: 16px;  }
+  h5  { font-size: 16px;  color: white; font-family: 'Abril Fatface', cursive;}
   p   { font-size: 1.2rem; }
 
   p, ul {
@@ -117,6 +124,20 @@
     border: 2px solid white;
     color: white;
   }
+
+  .crud-button {
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    padding: 0.6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: white;
+  }
+  
 
 /* Header */
 header {
@@ -163,6 +184,7 @@ header {
   .banner-button {
     margin-left: 17rem;
   }
+
   /* Login Page */
 
   .login-banner {
@@ -170,7 +192,7 @@ header {
     background-size: cover;
     background-position: center;
     min-height: 75vh;
-    
+    background-color: #404740;
   }
   .login-text {
     color:white;
@@ -275,10 +297,40 @@ header {
   /* Show Images */
 
   .show-image {
-    max-width: 20rem;
-    display: inline-block;
+    display: inline-flex; 
+    flex-flow: row wrap; 
+    justify-content: center; 
+    max-width: 30vh;
+    max-height: 30vh;
   } 
+  .show-margin {
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+  .no-bullets {
+    list-style-type: none;
+  }
 
-  /* Form */
+  /* New Garden Page */
+  .new-garden-banner {
+    background-image: url(cacti.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+  }
+
+  /* Show Garden Page */
+  .show-garden {
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+  }
+
+  /* Edit Garden Page */
+  .edit-garden {
+    background-image: url(cactus.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 75vh;
+  }
 
   /* Read More Feature */

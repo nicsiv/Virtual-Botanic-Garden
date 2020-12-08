@@ -1,7 +1,7 @@
 <h2 class="centered">Welcome To The <%=@room.room_name%></h2>
 <br>
-<section>
-<ul class="centered special_ul">
+<section class="show-margin">
+<ul class="centered no-bullets">
     <% @room.plants.each do |plant| %>
     <li class="show-image">
     <%= image_tag plant.image %></div>
