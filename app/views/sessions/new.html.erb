@@ -2,10 +2,10 @@
 <h2 class="login-text"> Please Login </h2>
 <br>
 <%= form_tag new_session_path do %>
-    <%= label_tag "Username" %>
+    <h5><%= label_tag "Username" %>
     <%= text_field_tag :username %>
     <%= label_tag "Password" %>
-    <%= password_field_tag :password %>
+    <%= password_field_tag :password %></h5>
     <%= submit_tag "Sign In"%>
   <% end %>
 </section>
