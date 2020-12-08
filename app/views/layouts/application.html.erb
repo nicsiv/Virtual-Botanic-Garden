@@ -18,16 +18,23 @@
     </head>
 
   <body>
+
   <header class="grid header">
   <div class="col-4-middle">
-  <h2 class= "logo"><%=link_to "VIRTUAL BOTANIC GARDEN", "home_path" %></h2>
+  <h2 class= "logo"><%=link_to "VIRTUAL BOTANIC GARDEN", root_path %></h2>
   </div>
   <nav class="col-8-middle right">
-    <a href="#"> QUIZ </a>
-    <a href="#"> ABOUT </a>
-    <a href="#rooms"> PLANT ROOMS </a>
-    <a href="#create"> CREATE GARDEN </a>
-</nav>                    
+    <a href="/#quiz"> QUIZ </a>
+    <a href="/#about"> ABOUT </a>
+    <a href="/#rooms"> PLANT ROOMS </a>
+    <%=link_to "CREATE MY GARDEN", new_garden_path %>
+    
+    <% if @user %>
+    <%= link_to "LOGOUT", sessions_path, method: :delete %>
+    <% else %>
+    <%= link_to "LOGIN", login_path %>
+    <% end %>
+  </nav>      
   </header>
 
     <%= yield %>

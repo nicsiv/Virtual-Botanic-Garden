@@ -1,10 +1,18 @@
-<h1> Welcome To Your Garden </h1>
+<h2 class="centered"> Welcome To <%= @garden.garden_name %></h2>
 
 <ul>
     <% @garden.plants.each do |plant| %>
-    <li> 
-        <%= plant.name %>
+    <li class="show-image">
+    <%= image_tag plant.image %></div>
+    </li>
+    <h3 class="names"><%= plant.name %></h3>
     </li>
     <% end %>
 </ul>
+
+<button><%= link_to "Edit Garden", edit_garden_path(@garden)%></button>
+<br>
+<button><%= link_to "Delete Garden", garden_path(@garden), method: :delete %></button>
+<br>
+
 

@@ -6,6 +6,9 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Room.destroy_all 
+Plant.destroy_all
+
 #THESE ARE THE ROOM SEEDS 
 cacti_room = Room.create(room_name: "Cacti & Succulent Room")
 # flower_room
@@ -32,7 +35,7 @@ bunny_ears_cactus = Plant.create(room_id: cacti_room.id, name: "Bunny Ears Cactu
 
 african_milk_tree = Plant.create(room_id: cacti_room.id, name: "African Milk Tree", description: "African milk tree (Euphorbia trigona) is native to Central Africa. It is often grown as a hedge there, useful for its rapid and enthusiastic growth, though its roots are not invasive. Though it looks a lot like a cactus, it is actually a succulent plant. It has many folk names, including candelabra cactus, cathedral cactus, friendship cactus, good luck plant or good luck cactus (the good luck attribution is probably due to how quickly it grows, and how easily it propagates). It stays lush and green throughout its growing season, and new growth has a lighter green color than the base plant. The Rubra or Royal Red cultivar is very popular for its dramatic coloring: it takes on bright red accents later in the season.", care_instructions: "Water every month. Let soil dry up. Needs dry humidity.", difficulty_level: "Easy", light_level: "High", color: false, size: "Medium", image: "african_milk_plant.jpg")
 
-tree_cactus = Plant.create(room_id: cacti_room.id, name: "Tree Cactus", description: "They can be tree-like (arborescent), meaning they typically have a single more-or-less woody trunk topped by several to many branches. In most other cacti, the branches are more typically cactus-like, bare of leaves and bark, and covered with spines, as in Pachycereus pringlei or the larger opuntias.", care_instructions: "Water every month. Let soil dry up. Needs dry humidity.", difficulty_level: "Easy", light_level: "High", color: false, size: "Large", image: "cactus_tree.jpeg")
+tree_cactus = Plant.create(room_id: cacti_room.id, name: "Tree Cactus", description: "They can be tree-like (arborescent), meaning they typically have a single more-or-less woody trunk topped by several to many branches. In most other cacti, the branches are more typically cactus-like, bare of leaves and bark, and covered with spines, as in Pachycereus pringlei or the larger opuntias.", care_instructions: "Water every month. Let soil dry up. Needs dry humidity.", difficulty_level: "Easy", light_level: "High", color: false, size: "Large", image: "tree_cactus.jpeg")
 
 golden_barrel_cactus = Plant.create(room_id: cacti_room.id, name: "Golden Barrel Cactus", description: "Echinocactus grusonii, popularly known as the golden barrel cactus, golden ball or mother-in-law's cushion, is a well known species of cactus, and is endemic to east-central Mexico. It is rare and endangered in the wild, where it is found near Mesa de León in the state of Querétaro, and in the state of Hidalgo.", care_instructions: "Water every month. Let soil dry up. Needs dry humidity.", difficulty_level: "Easy", light_level: "High", color: true, size: "Small", image: "golden_barrel_cactus.jpeg")
 
@@ -104,3 +107,6 @@ carrot = Plant.create(room_id: herb_room.id, name: "Carrot", description: "The c
 
 beet = Plant.create(room_id: herb_room.id, name: "Beet", description: "The beetroot is the taproot portion of a beet plant, usually known in Canada and the USA as beets while the vegetable is referred to as beetroot in British English, and also known as the table beet, garden beet, red beet, dinner beet or golden beet.", care_instructions: "Water every 11th day. Top layer should be dry. Fertalize every three weeks.", difficulty_level: "Medium", light_level: "High", color: true, size: "Small", image: "beet.jpeg")
 
+
+# User Seeds
+admin  = User.create(username: "admin", password: "password", password_confirmation: "password")

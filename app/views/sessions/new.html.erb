@@ -1,0 +1,12 @@
+<section class= "centered login-banner">
+<h2 class="login-text"> Please Login </h2>
+<br>
+<%= form_tag new_session_path do %>
+    <%= label_tag "Username" %>
+    <%= text_field_tag :username %>
+    <%= label_tag "Password" %>
+    <%= password_field_tag :password %>
+    <%= submit_tag "Sign In"%>
+  <% end %>
+</section>
+<br>

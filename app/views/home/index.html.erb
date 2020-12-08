@@ -1,4 +1,4 @@
-<section index="home" class="banner grid-right padded">
+<section index="quiz" class="banner grid-right padded">
   <div class="col-6_sm-12-middle">
     <h1 class="big-bold banner-text">
           <span> Our green </span> <br>
@@ -11,7 +11,7 @@
 
 <br>
 
-<section class="grid">
+<section index="about" class="grid">
   <div class="col-6_sm-12 banner1">
   </div>
   <div class="col-6_sm-12-middle padded">
@@ -27,35 +27,36 @@
 
 
 
-<section class="padded centered">
+<section index="rooms" class="padded centered">
   <h2 class="plant-rooms"> Visit A Plant Room</h2>
   <p class= "emphasis"> Browse & learn about plants in these different categories. </p>
+  
   <div class="grid padded-1">
+    
     <div class="col-3 padded-1">
-      <a href="#" class="clickable-box bg-image cactus-box">
+      <a href="/rooms/1" class="clickable-box bg-image cactus-box">
         <div class="overlay padded light-text">
           <h3> Cacti & Succulents </h3>
         </div>
-      </a>
     </div>
 
     <div class="col-3 padded-1">
-      <a href="#" class="clickable-box bg-image flower-box">
+      <a href="/rooms/2" class="clickable-box bg-image flower-box">
         <div class="overlay padded light-text">
-          <h3> Flowers </h3>
+          <h3> Flowers & Orchids </h3>
         </div>
       </a>
     </div>
 
     <div index="create" class="col-3 padded-1">
-      <a href="#" class="clickable-box bg-image foliage-box">
+      <a href="/rooms/3" class="clickable-box bg-image foliage-box">
         <div class="overlay padded light-text">
           <h3> Foliage & Palms </h3>
         </div>
       </a>
     </div>
     <div class="col-3 padded-1">
-    <a href="#" class="clickable-box bg-image herb-box">
+    <a href="/rooms/4" class="clickable-box bg-image herb-box">
       <div class="overlay padded light-text">
         <h3> Herbs & Vegetables </h3>
       </div>
@@ -66,11 +67,11 @@
 
 
 
-<section class="create centered">
+<section index="garden" class="create centered">
     <div class="padded2">
-    <h1 class="create-text"> Create Your Garden </h1>
-    <%=link_to "Create My Garden", new_garden_path(@garden), class: "button inverted"%>
-    <a href="#" class="button inverted"> See My Garden </a>
+    <h1 class="create-text"> Create My Garden </h1>
+    <%=link_to "Create My Garden", new_garden_path, class: "button inverted" %>
+    <%=link_to "See My Garden", new_garden_path, class: "button inverted" %>
     </div>
 </section>
 <br>

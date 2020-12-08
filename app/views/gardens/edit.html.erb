@@ -1,10 +1,10 @@
-<h2 class="centered"> Start Your Garden </h2>
+<h2 class="centered"> Edit Your Garden </h2>
 
 <br>
 <div class="centered">
 <%= form_for @garden do |f| %>
   
-    <%= f.label "Name Your Garden" %>
+    <%= f.label "Rename Your Garden" %>
     <%= f.text_field :garden_name %>
     
     <%= f.label "Plant" %>
@@ -20,4 +20,9 @@
     <li><%= message %></li>
   <% end %>
 <% end %>
+<br>
+
+<button> Add Plant</button>
+<br>
+<button> Delete Plant </button>
 <br>
