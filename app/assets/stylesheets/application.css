@@ -94,7 +94,7 @@
   .light-text   { color: white; }
 
 
-/* Butttons */
+/* Buttons */
 .button,
 .button-solid,
 .button-inverted {
@@ -280,8 +280,5 @@ header {
   } 
 
   /* Form */
-  .form {
-  }
-
 
   /* Read More Feature */
