@@ -1,5 +1,7 @@
 # README
 
+[DEMO](https://www.youtube.com/watch?v=2jGrlg2NKVs)
+
 ## Virtual Botanic Garden 
 - The Virtual Botanic Garden offers a virtual botanical garden tour. Visit different plant rooms to browse and learn about some of the most beautiful plants. Find the perfect plants for you based on your preferences and gardening level. Cacti, flowers, palms, herbs, and more are available for collection with just a few clicks. Once you have chosen which plants you would like in your garden, quickly fill out our form to create your garden. Visit this garden at any time.
 
@@ -12,8 +14,8 @@
 - User can view, edit, and delete their garden
 - *Future update* User can take a quiz to determine which plants are best for their lifestyle 
 
-![homepage](app/assets/readme_images/editgarden.png "Edit Page")
-![homepage](app/assets/readme_images/garden.png "Garden")
+![editpage](app/assets/readme_images/editgarden.png "Edit Page")
+![gardenpage](app/assets/readme_images/garden.png "Garden")
 
 ## Built With
 - Ruby
