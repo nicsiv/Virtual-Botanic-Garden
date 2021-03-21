@@ -12,7 +12,7 @@
 - User can view, edit, and delete their garden
 - *Future update* User can take a quiz to determine which plants are best for their lifestyle 
 
-![homepage](app/assets/readme_images/editgarden.png"Edit Page")
+![homepage](app/assets/readme_images/editgarden.png "Edit Page")
 ![homepage](app/assets/readme_images/garden.png "Garden")
 
 ## Built With
